@@ -23,8 +23,7 @@ const useSendMessage = () => {
 			setMessage([...messages, data]);
 		} catch (error) {
 			toast.error(error.message);
-      console.log(error);
-      console.log(selectedConversation._id , "id");
+
       
       
 		} finally {

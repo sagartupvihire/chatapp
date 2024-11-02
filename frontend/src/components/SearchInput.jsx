@@ -28,7 +28,6 @@ const SearchInput = () => {
       setSearch("");
       return;
     }
-    console.log("Searching for: ", search);
   }
   return (
     <form className='flex items-center gap-2' onSubmit={handleSubmit}>

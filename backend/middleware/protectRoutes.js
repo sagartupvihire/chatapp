@@ -9,7 +9,7 @@ const protectRoutes =async (req, res,next) => {
                 return res.status(401).json({error : 'Invalid token'})
             } 
             const decoded = jwt.verify(token, process.env.JWT_SECRET)
-            console.log("decoded", decoded);
+           
             if(!decoded) {
                 return res.status(401).json({error : 'Invalid'});
             }

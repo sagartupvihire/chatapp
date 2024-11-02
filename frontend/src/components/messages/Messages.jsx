@@ -4,7 +4,7 @@ import useGetMessages from '../../hooks/useGetMessages'
 import MessageSkeleton from '../skeletons/MessagesSkeletons'
 const Messages = () => {
   const { messages, loading } = useGetMessages();
-  console.log("message", messages);
+  
   const lastMessageRef = useRef()
   useEffect(() => {
     setTimeout(() => {

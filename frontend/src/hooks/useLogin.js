@@ -40,7 +40,7 @@ export default useLogout;
 
 function handleInputErrors({ username, password }) {
 	if ( !username || !password) {
-    console.log(username, password); // for debugging purposes only
+   // for debugging purposes only
 		toast.error("Please fill in all fields");
 		return false;
 	}
